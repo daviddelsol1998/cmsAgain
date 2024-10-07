@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-5">
+       <div class="panel panel-default">
+          <div class="panel-heading">
+             <div class="row pad-left-right">
+                <span class="title pull-left">Messages</span>
+             </div>
+          </div>
+
+          <cms-message-edit (addMessageEvent)="onAddMessage($event)"></cms-message-edit>
+  
+          <div class="list-group">
+            <cms-message-item 
+              *ngFor="let message of messages" 
+              [message]="message">
+            </cms-message-item>
+          </div>
+
+          <div class="panel-body">
+             <div class="row">
+                <div class="col-xs-12">
+                   <app-message-item></app-message-item> <!-- Tag to load MessageItemComponent -->
+                </div>
+             </div>
+          </div>
+          <div class="panel-footer">
+             <app-message-edit></app-message-edit> <!-- Tag to load MessageEditComponent -->
+          </div>
+       </div>
+    </div>
+ </div>

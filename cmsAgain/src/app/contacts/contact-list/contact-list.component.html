@@ -1,0 +1,22 @@
+<div class="panel">
+    <div class="panel-header">
+      <h2>Contacts</h2>
+      <!-- <a class="btn-create-contact" href="#" (click)="createNewContact()">Create New Contact</a> -->
+      
+      <div *ngFor="let contact of contacts">
+        <app-contact-item [contact]="contact" (click)="onSelected(contact)"></app-contact-item>
+      </div>
+
+    </div>
+    <div class="panel-body">
+      <div *ngFor="let contact of contacts" class="contact-item">
+        <app-contact-item [contact]="contact"></app-contact-item>
+        <img [src]="contact.picture" alt="{{ contact.name }}" class="contact-picture">
+        <div class="contact-details">
+            <h3 class="contact-name">{{ contact.name }}</h3>
+            <p class="contact-email">{{ contact.email }}</p>
+            <p class="contact-phone">{{ contact.phone }}</p>
+          </div>
+      </div>
+    </div>
+  </div>

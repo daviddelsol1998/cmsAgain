@@ -1,0 +1,15 @@
+<div class="panel">
+    <div class="panel-header">
+      <img [src]="contact.imageUrl" alt="{{ contact.name }}" class="contact-picture">
+      <h2>{{ contact.name }}</h2>
+      <div class="button-group">
+        <a class="btn-edit" href="#" (click)="editContact()">Edit</a>
+        <a class="btn-delete" href="#" (click)="deleteContact()">Delete</a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <p><strong>Email:</strong> {{ contact.email }}</p>
+      <p><strong>Phone:</strong> {{ contact.phone }}</p>
+    </div>
+  </div>
+  
