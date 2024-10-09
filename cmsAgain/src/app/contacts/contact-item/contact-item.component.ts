@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
 
   //Contanct Input Variable
   selector: 'app-contact-item',
-  templateUrl: './src/app/contacts/contact-item/contact-item.component.html'
+  //templateUrl: './src/app/contacts/contact-item/contact-item.component.html'
   //styleUrl: ['./src/app/contacts/contact-item/contact-item.component.css'];
 
 })
